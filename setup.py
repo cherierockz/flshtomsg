@@ -1,18 +1,19 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python3
+import keyring
+import getpass
 
-setup(
-    name="password_extractor",
-    version="0.1",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    install_requires=[
-        "psutil",
-        "pywin32; sys_platform == 'win32'",
-        "cryptography",
-    ],
-    entry_points={
-        "console_scripts": [
-            "password-extractor=password_extractor.main:main",
-        ],
-    },
-)
+print("🔐 Secure Credential Setup for Password Recovery Tool")
+
+# Store email
+email = input("Enter your email: ")
+keyring.set_password("flash2msg", "email", email)
+
+# Store app password (use an app-specific password for Gmail)
+password = getpass.getpass("Enter your email app password: ")
+keyring.set_password("flash2msg", "password", password)
+
+# Store recipient
+recipient = input("Enter recipient email: ")
+keyring.set_password("flash2msg", "recipient", recipient)
+
+print("✅ Credentials stored securely in system keyring")

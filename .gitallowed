@@ -1,0 +1,9 @@
+# Allow keyring usage
+keyring\.set_password
+keyring\.get_password
+getpass\.getpass
+
+# Allow crypto patterns
+Fernet\.generate_key
+self\.key = b\''
+elif key:

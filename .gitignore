@@ -10,6 +10,7 @@ system_report.txt  # Generated password reports
 .env.local        
 .env.*            # All environment variants
 secrets/          # Folder for sensitive files
+.secureenv/
 
 # ========================
 # 🐍 PYTHON SPECIFIC
@@ -92,3 +93,11 @@ backup_*
 *passwords.csv
 *credentials.json.secureenv/
 flshtomsg files/
+# Security
+.env
+*.secret
+keyrings/
+credentials/
+secrets/
+*.key
+*.pem
