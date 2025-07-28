@@ -5,5 +5,5 @@ getpass\.getpass
 
 # Allow crypto patterns
 Fernet\.generate_key
-self\.key = b\''
+self\.key = b\'\'
 elif key:
