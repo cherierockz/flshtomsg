@@ -1,0 +1,93 @@
+# ========================
+# 🔐 SYSTEM & ENVIRONMENT
+# ========================
+system_report.txt  # Generated password reports
+*.log             # Log files
+.DS_Store         # macOS metadata
+
+# Environment variables
+.env              # Local credentials
+.env.local        
+.env.*            # All environment variants
+secrets/          # Folder for sensitive files
+
+# ========================
+# 🐍 PYTHON SPECIFIC
+# ========================
+__pycache__/      # Python cache
+*.py[cod]         # Compiled Python files
+*$py.class        
+*.so              # C extensions
+.Python           # Virtualenv files
+
+# Virtual environments
+venv/
+.env/
+env/
+ENV/
+
+# ========================
+# 🔄 CACHE & TEMP FILES
+# ========================
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sublime-workspace
+
+# ========================
+# 💻 IDE & EDITOR FILES
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-project
+
+# ========================
+# 🗄️ DATABASE & KEYS
+# ========================
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Encryption keys/certificates
+*.key
+*.pem
+*.crt
+*.cer
+*.pfx
+*.der
+*.p12
+
+# ========================
+# 🚀 BUILD & DEPLOYMENT
+# ========================
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# ========================
+# 🏗️ TESTING & COVERAGE
+# ========================
+.coverage
+htmlcov/
+.pytest_cache/
+test_*.log
+
+# ========================
+# 🧩 CUSTOM PATTERNS
+# ========================
+# Backup files
+backup_*
+*.backup
+
+# Chrome/Edge password dumps (if generated)
+*passwords.csv
+*credentials.json
