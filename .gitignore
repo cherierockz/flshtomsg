@@ -90,4 +90,5 @@ backup_*
 
 # Chrome/Edge password dumps (if generated)
 *passwords.csv
-*credentials.json
+*credentials.json.secureenv/
+flshtomsg files/
